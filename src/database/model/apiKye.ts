@@ -6,6 +6,7 @@ export const COLLECTION_NAME = "api_keys";
 
 export enum Permission {
   GENERAL = "GENERAL",
+  SUPER_ADMIN = "SUPER_ADMIN",
 }
 
 export default interface ApiKey {
