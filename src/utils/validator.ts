@@ -1,7 +1,7 @@
 import Joi from 'joi';
 import { Request, Response, NextFunction } from 'express';
-import Logger from '../core/Logger';
-import { BadRequestError } from '../core/ApiError';
+import Logger from '../config/logger';
+import { BadRequestError } from '../core/apiError';
 import { Types } from 'mongoose';
 
 export enum ValidationSource {
