@@ -3,7 +3,7 @@ import Logger from "./config/logger";
 import cors from "cors";
 import { corsUrl, environment } from "./config/envConfigs";
 import "./database"; // initialize database
-// import "./cache"; // initialize cache
+import "./cache"; // initialize cache
 import {
   NotFoundError,
   ApiError,
