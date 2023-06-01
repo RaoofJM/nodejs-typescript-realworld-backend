@@ -1,6 +1,6 @@
 import Joi from 'joi';
 import { Request, Response, NextFunction } from 'express';
-import Logger from '../config/logger';
+import Logger from '../core/logger';
 import { BadRequestError } from '../core/apiError';
 import { Types } from 'mongoose';
 

@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { JoiObjectId, JoiUrlEndpoint } from "../../utils/validator";
+import { JoiObjectId, JoiUrlEndpoint } from "../../helpers/validator";
 
 export default {
   id: Joi.object().keys({

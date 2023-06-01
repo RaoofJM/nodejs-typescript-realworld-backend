@@ -1,5 +1,5 @@
 import Joi from "joi";
-import { JoiAuthBearer } from "../utils/validator";
+import { JoiAuthBearer } from "../../helpers/validator";
 
 export default {
   apiKey: Joi.object()

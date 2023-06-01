@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import DailyRotateFile from "winston-daily-rotate-file";
 
-import { environment, logDirectory } from "./envConfigs";
+import { environment, logDirectory } from "../config/envConfigs";
 
 let dir = logDirectory;
 if (!dir) dir = path.resolve("logs");

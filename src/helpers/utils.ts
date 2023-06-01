@@ -1,4 +1,4 @@
-export default function isArrayOfStrings(value: unknown): value is string[] {
+export function isArrayOfStrings(value: unknown): value is string[] {
   if (!Array.isArray(value)) {
     return false;
   }

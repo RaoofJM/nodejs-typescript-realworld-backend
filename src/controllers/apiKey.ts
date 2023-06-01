@@ -9,7 +9,7 @@ import {
 import { SuccessMsgResponse, SuccessResponse } from "../core/apiResponse";
 import ApiKey from "../database/model/apiKye";
 import { Types } from "mongoose";
-import isArrayOfStrings from "../utils/isArrayOfStrings";
+import { isArrayOfStrings } from "../helpers/utils";
 
 // GET - /apikey/find-all
 async function findAll(req: Request, res: Response, next: NextFunction) {

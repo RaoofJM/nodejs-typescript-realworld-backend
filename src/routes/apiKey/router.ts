@@ -1,9 +1,9 @@
 import express from "express";
 import controller from "../../controllers/apiKey";
-import validator, { ValidationSource } from "../../utils/validator";
+import validator, { ValidationSource } from "../../helpers/validator";
 import shcema from "./schema";
-import authSchema from "../../auth/schema";
-import { superAdminApiKeyChech } from "../../auth/apiKey";
+import authSchema from "../../auth/apiKey/schema";
+import { superAdminApiKeyChech } from "../../auth/apiKey/apiKey";
 
 const router = express.Router();
 

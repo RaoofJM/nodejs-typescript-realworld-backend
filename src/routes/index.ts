@@ -1,6 +1,6 @@
 import express from "express";
 import apiKey from "./apiKey/router";
-import apiKeyCheck from "../auth/apiKey";
+import apiKeyCheck from "../auth/apiKey/apiKey";
 
 const router = express.Router();
 

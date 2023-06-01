@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import Logger from "../config/logger";
+import Logger from "../core/logger";
 import {
   dbMaxPoolSize,
   dbMinPoolSize,

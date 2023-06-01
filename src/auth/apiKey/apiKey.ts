@@ -1,10 +1,10 @@
 import express, { Request, Response, NextFunction } from "express";
-import ApiKeyRepo from "../database/repository/apiKey";
-import { ForbiddenError } from "../core/apiError";
-import Logger from "../config/logger";
+import ApiKeyRepo from "../../database/repository/apiKey";
+import { ForbiddenError } from "../../core/apiError";
+import Logger from "../../core/logger";
 import schema from "./schema";
-import validator, { ValidationSource } from "../utils/validator";
-import ApiKey, { Permission } from "../database/model/apiKye";
+import validator, { ValidationSource } from "../../helpers/validator";
+import ApiKey, { Permission } from "../../database/model/apiKye";
 import { Types } from "mongoose";
 
 const router = express.Router();
