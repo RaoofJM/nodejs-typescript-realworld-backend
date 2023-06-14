@@ -8,6 +8,8 @@ services:
     env_file: .env
     ports:
       - '$PORT:$PORT'
+    volumes:
+      - ./src:/home/node/app/src
     links:
       - mongo
       - redis
