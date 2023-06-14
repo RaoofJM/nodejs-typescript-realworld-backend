@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  app:
+    build: "./"
+    container_name: "app"
+    restart: "always"
+    env_file: .env
+    ports:
+      - '$PORT:$PORT'
+    links:
+      - mongo
+      - redis
+    depends_on:
+      - mongo
+      - redis
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    env_file: .env
+    environment:
+      - MONGO_INITDB_DATABASE=$DB_NAME
+    ports:
+      - '$DB_PORT:27017'
+    volumes:
+      - type: "bind"
+        source: "./db/mongo"
+        target: "/data/db"
+
+  redis:
+    image: redis
+    container_name: redis
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - '$REDIS_PORT:6379'
+    volumes:
+      - type: "bind"
+        source: "./db/cache"
+        target: "/data/cache"

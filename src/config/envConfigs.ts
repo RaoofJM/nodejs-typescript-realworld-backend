@@ -2,10 +2,13 @@ export const environment = process.env.NODE_ENV;
 export const port = process.env.PORT;
 export const timezone = process.env.TZ;
 
-export const mongoConnetion = process.env.MONGO_DB_CONNECTION;
-
-export const dbMinPoolSize = process.env.DB_MIN_POOL_SIZE;
-export const dbMaxPoolSize = process.env.DB_MAX_POOL_SIZE;
+export const db = {
+  name: process.env.DB_NAME || "",
+  host: process.env.DB_HOST || "",
+  port: process.env.DB_PORT || "",
+  minPoolSize: parseInt(process.env.DB_MIN_POOL_SIZE || "5"),
+  maxPoolSize: parseInt(process.env.DB_MAX_POOL_SIZE || "10"),
+};
 
 export const corsUrl = process.env.CORS_URL;
 
@@ -18,7 +21,10 @@ export const tokenInfo = {
 
 export const logDirectory = process.env.LOG_DIR;
 
-export const redisConnetion = process.env.REDIS_CONNECTION;
+export const redis = {
+  host: process.env.REDIS_HOST || "",
+  port: parseInt(process.env.REDIS_PORT || "0"),
+};
 
 export const superAdminApiKey = process.env.SUPER_ADMIN_API_KEY;
 

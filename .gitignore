@@ -42,6 +42,14 @@ build
 node_modules/
 jspm_packages/
 
+# Docker volumes
+db/cache/*
+db/mongo/*
+
+# Include .gitkeep files
+!db/cache/.gitkeep
+!db/mongo/.gitkeep
+
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
