@@ -6,9 +6,10 @@ This repository contains a sample RESTful API built with Node.js and TypeScript.
 
 Follow the steps below to set up and run the project:
 
-1. Make a copy of the `.env.example` file and rename it to `.env`.
-2. Modify the environment variables in the `.env` file according to your specific requirements.
-3. Once the configurations are complete, the project is ready to run. To execute the project using Docker, run the command `docker-compose up --build`. For local development, use either `npm start` or `npm run watch`. 🏃‍♂️
+1. Install the project dependencies by running the following command: `npm install`
+2. Make a copy of the `.env.example` file and rename it to `.env`.
+3. Modify the environment variables in the `.env` file according to your specific requirements.
+4. Once the configurations are complete, the project is ready to run. To execute the project using Docker, run the command `docker-compose up --build`. For local development, use either `npm start` or `npm run watch`. 🏃‍♂️
 
 ## 💻 Tech Stack
 
