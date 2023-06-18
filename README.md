@@ -18,12 +18,6 @@ The project incorporates the following technologies:
 
 Feel free to explore and leverage these technologies for your own projects. 🧪
 
-## 📊 GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=RaoofJM&theme=dark&hide_border=false&include_all_commits=false&count_private=false)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=RaoofJM&theme=dark&hide_border=false)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RaoofJM&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
