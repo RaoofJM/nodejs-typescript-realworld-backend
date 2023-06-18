@@ -10,7 +10,7 @@ export enum Permission {
 }
 
 export default interface ApiKey {
-  _id: Types.ObjectId;
+  _id?: Types.ObjectId;
   key: string;
   permissions?: Permission[];
   status?: boolean;

@@ -12,7 +12,7 @@ const router = express.Router();
 declare module "express-serve-static-core" {
   interface Request {
     apiKey: ApiKey;
-    userId: Types.ObjectId;
+    userId: Types.ObjectId | string;
   }
 }
 
