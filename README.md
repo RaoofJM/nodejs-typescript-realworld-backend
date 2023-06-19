@@ -1,21 +1,32 @@
-# 💻 nodejs-typescript-realworld-backend
+# 💻 TelegramUnknownChatBot
 
-This repository contains a sample RESTful API built with Node.js and TypeScript. It utilizes various technologies such as MongoDB, Redis, Express.js, and Docker. The project follows best practices and implements the DRY (Don't Repeat Yourself) principle, providing a solid foundation for backend development. 🌟
+This repository contains a Telegram chat bot developed using Node.js and the Telegraf library. It enables users to engage in anonymous real-time conversations with multiple participants simultaneously. The bot provides a platform for users to initiate chat sessions with strangers while maintaining their anonymity throughout the conversation. Users can specify their preferred conversation partner's gender, and the bot ensures matching with participants of compatible gender preferences. The chat sessions take place within the Telegram messaging platform, offering a seamless and secure communication experience.
 
 ## 🚀 Getting Started
 
-Follow the steps below to set up and run the project:
+To run the TelegramUnknownChatBot project, follow the steps below:
 
-1. Install the project dependencies by running the following command: `npm install`
-2. Make a copy of the `.env.example` file and rename it to `.env`.
-3. Modify the environment variables in the `.env` file according to your specific requirements.
-4. Once the configurations are complete, the project is ready to run. To execute the project using Docker, run the command `docker-compose up --build`. For local development, use either `npm start` or `npm run watch`. 🏃‍♂️
+1. Start by running the API of the project. Navigate to the `api` folder.
+2. Install the project dependencies by running the command: `npm install`.
+3. Once the dependencies are installed, find the `config.env` file under the `/config` directory and modify the environment variables according to your specific requirements.
+4. The API is now ready to run. Execute the command `npm start` to start the API.
+5. Once the API is running, it's time to start the Telegram bot. Navigate to the `Telegraf` folder and install the project dependencies by running the command: `npm install`.
+6. Make a copy of the `.env.example` file and rename it to `.env`.
+7. To run the Telegram bot, you need a bot token. Use the BotFather bot on Telegram to obtain your bot token. After receiving the token, place it inside the corresponding environment variable in the `.env` file.
+8. Everything is set up now. You just need to execute the command `npm start` to run the Telegram bot.
 
 ## 💻 Tech Stack
 
-The project incorporates the following technologies:
+The TelegramUnknownChatBot project incorporates the following technologies:
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+- JavaScript
+- Node.js
+- Telegraf
+- MongoDB
+- Mongoose
+- Express.js
+- Postman
+- npm
 
 Feel free to explore and leverage these technologies for your own projects. 🧪
 
@@ -26,4 +37,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## 📞 Contact
 
 If you have any questions, suggestions, or need assistance, please feel free to reach out.
-
